@@ -1,0 +1,94 @@
+---
+title: 'Projects'
+description: 'Our web designs include small and medium business websites, covering a variety of trades, goods and services.'
+preloadImg: '/assets/images/work.jpg'
+permalink: 'projects/'
+eleventyNavigation:
+    key: Projects
+    order: 300
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/css/projects.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Our Projects</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/work-m.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/work.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/work.jpg" alt="Website projects for local businesses" loading="eager" width="2500" height="1000">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Gallery                    -->
+    <!-- ============================================ -->
+
+    <section id="gallery">
+        <div class="cs-container">
+            <div class="cs-image-group">
+                <!-- Row 1-->
+                <div class="cs-row cs-row-1">
+                    <picture class="cs-picture cs-picture1 cs-no-cover">
+                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/Trailflex-m.webp">
+                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/Trailflex.png">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/Trailflex.png" alt="Trailflex modular backpacks" loading="lazy" width="400" height="560">
+                        <p class="cs-image-title">Modular backpack e-commerce website for startup company.</p>
+                    </picture>
+                    <picture class="cs-picture cs-picture2 cs-no-cover">
+                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/Vintage-Workshop-m.webp">
+                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/Vintage-Workshop.png">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/Vintage-Workshop.png" alt="Vintage Workshop ecommerce site" loading="lazy" width="400" height="560">
+                        <p class="cs-image-title">Local business craft store selling products nationally.</p>
+                    </picture>
+                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                </div>
+                <!-- Row 2 -->
+                <div class="cs-row cs-row-2">
+                    <picture class="cs-picture cs-picture1 cs-no-cover">
+                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/American-Outdoorsman-m.webp">
+                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/American-Outdoorsman.png">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/American-Outdoorsman.png" alt="American Outdoorsman TV Show" loading="lazy" width="400" height="560">
+                        <p class="cs-image-title">TV show engaging with their viewers through a blog site.</p>
+                    </picture>
+                    <picture class="cs-picture cs-picture2 cs-no-cover">
+                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/MUTE-m.webp">
+                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/MUTE.png">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/MUTE.png" alt="MUTE events and performers" loading="lazy" width="400" height="560">
+                        <p class="cs-image-title">Event entertainment booking agency using website to promote performers.</p>
+                    </picture>
+                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                </div>
+                <!-- Row 3 -->
+                <div class="cs-row cs-row-3">
+                    <picture class="cs-picture cs-picture1 cs-no-cover">
+                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/Kids-creations-m.webp">
+                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/Kids-creations.png">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/Kids-creations.png" alt="Kid Swingset builder" loading="lazy" width="400" height="560">
+                        <p class="cs-image-title">Swing set manufacturer selling products directly to customer through website.</p>
+                    </picture>
+                    <picture class="cs-picture cs-picture2 cs-no-cover">
+                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/Solid-A-m.webp">
+                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/Solid-A.png">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/Solid-A.png" alt="Solid-A educational materials" loading="lazy" width="400" height="560">
+                        <p class="cs-image-title">Local student learning company offering services city-wide.</p>
+                    </picture>
+                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                </div>
+            </div>
+            <a href="/contact" class="cs-button-solid">Get Free Quote</a>
+        </div>
+    </section>
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}

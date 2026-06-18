@@ -1,0 +1,78 @@
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="footer">
+    <div class="container">
+        <div class="left-section">
+            <a class="logo" href="/"><img loading="lazy" decoding="async" src="/assets/svgs/logo-SXSWeb-white.svg" alt="logo" width="400" height="300"></a>
+            <p>
+                Specializing in small business web design and development for clients who no longer want to be small.
+            </p>
+        </div>
+        <div class="right-section">
+            <div class="lists">
+                <ul>
+                    <li>
+                        <h2>Information</h2>
+                    </li>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="/reviews">Reviews</a>
+                    </li>
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>Services</h2>
+                    </li>
+                    <li>Web Design</li>
+                    <li>Website Maintenance</li>
+                    <li>Search Engine Optimization</li>
+                    <li>Content Creation</li>
+                    <li>Ecommerce website</li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>Contact</h2>
+                    </li>
+                    <li>
+                        <a href="/contact">
+                            {{client.address.lineOne}}<br>
+                            {{client.address.lineTwo}}<br>
+                            {{client.address.city}}
+                            {{client.address.state}}
+                            {{client.address.zip}}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:{{client.phoneForTel}}">
+                            T:
+                            {{client.phoneFormatted}}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:{{client.email}}">Click to Email</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="credit">
+        <span>Designed with Love by</span>
+        <a href="/" target="_blank" rel="noopener">SXSWeb Design</a>
+        <span class="copyright">
+            Copyright 2023 - Present</span>
+    </div>
+</footer>

@@ -1,0 +1,321 @@
+---
+title: 'Affordable Web Design for Small Businesses'
+description: 'SXSWeb helps you create a mobile and responsive website for your business. Our web designers will handle all tasks for you, including a logo design.'
+preloadImg: '/assets/images/austin.jpg'
+permalink: '/'
+eleventyNavigation:
+  key: Home
+  order: 100
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/css/local.css" />
+    <link rel="stylesheet" href="/css/critical.css" />
+
+    <!-- Script for Netlify Identity -->
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script defer>
+        if (window.netlifyIdentity) {
+            window
+                .netlifyIdentity
+                .on('init', (user) => {
+                    if (!user) {
+                        window
+                            .netlifyIdentity
+                            .on('login', () => {
+                                document.location.href = '/admin/';
+                            });
+                    }
+                });
+        }
+    </script>
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    Hero                      -->
+    <!-- ============================================ -->
+
+    <section id="hero">
+        <div class="cs-container">
+            <div class="cs-flex-group">
+                <span class="cs-topper">Helping small businesses grow</span>
+                <h1 class="cs-title">Small Business Web Design and Development</h1>
+                <p class="cs-text">
+                    Say goodbye to sluggish website builders! Discover our cost-effective, high-performance website solutions tailored for small businesses.
+                </p>
+                <a href="/about" class="cs-button-solid">Find out more</a>
+                <a href="/contact" class="cs-button-transparent">
+                    <img
+                    class="cs-img"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
+                    alt="play icon"
+                    width="17"
+                    height="17" />
+                    Whoa! I'm in
+                </a>
+            </div>
+        </div>
+
+        <!-- Background Image -->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="/assets/images/austin-m.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/austin.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/austin.jpg" alt="new home" width="2500" height="1667" loading="eager">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Services                    -->
+    <!-- ============================================ -->
+
+    <section id="services" class="services">
+        <!-- Get Icons From flaticon.com -->
+        <div class="card">
+            <picture>
+                <img
+                aria-hidden="true"
+                decoding="async"
+                src="/assets/svgs/icons/icon-mobile.svg"
+                alt="appliance"
+                width="64"
+                height="64" />
+            </picture>
+            <h2>Mobile Optimized</h2>
+            <p>We ensure your website feels great on mobile first, then we add on to it to make tablet and desktop.</p>
+        </div>
+        <div class="card">
+            <picture>
+                <img
+                aria-hidden="true"
+                decoding="async"
+                src="/assets/svgs/icons/shopping_cart.svg"
+                alt="appliance"
+                width="64"
+                height="64" />
+            </picture>
+            <h2>E-commerce</h2>
+            <p>Custom designed Shopify integration. Easy to edit your products online shop presence.</p>
+        </div>
+        <div class="card">
+            <picture>
+                <img
+                aria-hidden="true"
+                decoding="async"
+                src="/assets/svgs/icons/startup-rocket-launch-icon.svg"
+                alt="appliance"
+                width="64"
+                height="64" />
+            </picture>
+            <h2>SEO</h2>
+            <p>Our content, code, structure, speed, and assets contribute to search engine optimization.</p>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="sbs">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-left">
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="/assets/images/brushes-m.webp">
+                    <source media="(min-width: 601px)" srcset="/assets/images/brushes.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/brushes.jpg" alt="paint brushes" loading="lazy" width="400" height="563">
+                </picture>
+                <picture class="cs-picture cs-picture2">
+                    <source media="(max-width: 600px)" srcset="/assets/images/waterfalls-m.webp">
+                    <source media="(min-width: 601px)" srcset="/assets/images/waterfalls.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/waterfalls.jpg" alt="mobile waterfall" loading="lazy" width="400" height="563">
+                </picture>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-right">
+                <span class="cs-topper">About Us</span>
+                <h2 class="cs-title">SXSWeb Design</h2>
+                <p class="cs-text">
+                    Our name is inspired by the SXSW Festival in Austin, TX. Like our company, it is a blend of art and technology, bringing together two seemingly disparate worlds - the creative arts and cutting-edge technology - into a single, vibrant result.
+                </p>
+                <p class="cs-text">
+                    We are professionals in both technology and creativity. With this fusion of skills we create optimized websites for small businesses, so that, like us, they can grow in this digitally connected world.
+                </p>
+                <div class="cs-flex-group">
+                    <p class="cs-flex-p">
+                        When we started our own business, we didn't have thousands of capital to invest on a website that would attract customers. We now help small businesses in a similar situation. 
+                    </p>
+                    <span class="cs-name">Bekah and Jorge</span>
+                    <span class="cs-job">Owners</span>
+                    <img 
+                    class="cs-quote-icon"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
+                    alt="gavel"
+                    width="136"
+                    height="77" />
+                </div>
+                <a href="/about" class="cs-button-solid">More About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--            Extra Content To Rank             -->
+    <!-- ============================================ -->
+
+    <section id="sbs-r">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-left">
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="/assets/images/baker-m.webp">
+                    <source media="(min-width: 601px)" srcset="/assets/images/baker.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/baker.jpg" alt="small business" loading="lazy" width="400" height="560">
+                </picture>
+                <picture class="cs-picture cs-picture2">
+                    <source media="(max-width: 600px)" srcset="/assets/images/we-are-open-m.webp">
+                    <source media="(min-width: 601px)" srcset="/assets/images/we-are-open.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/we-are-open.jpg" alt="Open for business" loading="lazy" width="400" height="560">
+                </picture>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-right">
+                <span class="cs-topper">Website Design</span>
+                <h2 class="cs-title">We'll take care of everything</h2>
+                <p class="cs-text">
+                    You can't focus on growing your own business while you're spending time learning about HTML, CSS, JS, DNS, or other complicated techno-acronyms. It sucks. We went through that for many years.
+                </p>
+                <p class="cs-text">
+                    We are also business owners, and we too prefer to spend time growing our own business. Our business is web development, so let's collaborate!
+                </p>
+                <p class="cs-text">
+                    Let us take care of your site and do our own craft, so you can do yours. We tailor content to your individual business around what makes it unique. We will collaborate with you to create a website for you that you are proud of.
+                </p>
+                <a href="/blog" class="cs-button-solid">Read our Blog</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Gallery                    -->
+    <!-- ============================================ -->
+
+    <section id="gallery">
+        <div class="cs-container">
+            <span class="cs-topper">Our Portfolio</span>
+            <h2 class="cs-title">Small business websites</h2>
+            <div class="cs-image-group">
+                <!-- Row 1-->
+                <div class="cs-row cs-row-1">
+                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                    <picture class="cs-picture cs-picture1 cs-no-cover">
+                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/Trailflex-m.webp">
+                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/Trailflex.png">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/Trailflex.png" alt="Trailflex modular backpacks" loading="lazy" width="400" height="200">
+                    </picture>
+                </div>
+                <!-- Row 2 -->
+                <div class="cs-row cs-row-2">
+                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                    <picture class="cs-picture cs-picture1 cs-no-cover">
+                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/Kids-creations-m.webp">
+                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/Kids-creations.png">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/Kids-creations.png" alt="Kid Swingset builder" loading="lazy" width="400" height="200">
+                    </picture>
+                </div>
+                <!-- Row 3 -->
+                <div class="cs-row cs-row-3">
+                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                    <picture class="cs-picture cs-picture1 cs-no-cover">
+                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/American-Outdoorsman-m.webp">
+                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/American-Outdoorsman.png">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/American-Outdoorsman.png" alt="American Outdoorsman TV Show" loading="lazy" width="400" height="200">
+                    </picture>
+                </div>
+            </div>
+            <a href="/projects" class="cs-button-solid">View Full Gallery</a>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Reviews                    -->
+    <!-- ============================================ -->
+
+    <section id="reviews">
+        <div class="cs-container">
+            <span class="cs-topper">Our Reviews</span>
+            <h2 class="cs-title">Words From Our Customers</h2>
+            <p class="cs-text">
+                Our customers are the lifeblood of our business, and we aim to delight them and you.
+            </p>
+            <ul class="cs-card-group">
+                <!-- Review 1 -->
+                <li class="cs-item">
+                    <img
+                    class="cs-item-img"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
+                    alt="profile picture"
+                    width="80"
+                    height="80" />
+                    <p class="cs-item-p">
+                        They transformed our outdated site into a sleek, user-friendly masterpiece that has boosted our online presence and customer engagement significantly.
+                    </p>
+                    <span class="cs-reviewer">
+                        Ryan Summers
+                        <span class="cs-desc">Mute Events</span>
+                    </span>
+                    <img
+                    class="cs-item-stars"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
+                    alt="stars"
+                    width="96"
+                    height="16" />
+                </li>
+                <!-- Review 2 -->
+                <li class="cs-item">
+                    <img
+                    class="cs-item-img"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
+                    alt="profile picture"
+                    width="80"
+                    height="80" />
+                    <p class="cs-item-p">
+                        SXSWeb delivered a stunning website ahead of schedule and provided exceptional support throughout the entire process.
+                    </p>
+                    <span class="cs-reviewer">
+                        Amy Barickman
+                        <span class="cs-desc">Vintage Workshop</span>
+                    </span>
+                    <img
+                    class="cs-item-stars"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
+                    alt="stars"
+                    width="96"
+                    height="16" />
+                </li>
+            </ul>
+            <a aria-label="Our Reviews" href="/reviews" class="cs-button-solid">Our Reviews</a>
+        </div>
+    </section>
+
+    {% include 'components/cta.html' %}
+{% endblock %}

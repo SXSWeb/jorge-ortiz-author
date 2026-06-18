@@ -1,0 +1,15 @@
+{
+	"name": "SXSWeb Design",
+	"email": "bekah@sxsweb.com",
+	"phoneForTel": "5127609364",
+	"phoneFormatted": "(512) 760-9364",
+	"address": {
+		"lineOne": "SXSWeb Design",
+		"lineTwo": "7413 Sagira Path",
+		"city": "Austin",
+		"state": "TX",
+		"zip": "78724",
+		"mapLink": "https://maps.app.goo.gl/5ryBu5c4nCtZVmGw9"
+	},
+	"domain": "sxsweb.design"
+}

@@ -1,0 +1,83 @@
+---
+title: 'About'
+description: 'SXSWeb is a small business helping other small businesses flourish though careful design of the webapges that engage customers.'
+preloadImg: '/assets/images/jorge-and-bekah-interview-landscape.jpg'
+permalink: 'about/'
+eleventyNavigation:
+    key: About Us
+    order: 200
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/css/about.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">About Us</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/jorge-and-bekah-interview-landscape-m.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/jorge-and-bekah-interview-landscape.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/jorge-and-bekah-interview-landscape.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1000">
+        </picture>
+
+    </section>
+
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="sbs">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-left">
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="/assets/images/jorge-and-bekah-interview-m.webp">
+                    <source media="(min-width: 601px)" srcset="/assets/images/jorge-and-bekah-interview.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/jorge-and-bekah-interview.jpg" alt="cabinets" loading="lazy" width="400" height="563">
+                </picture>
+                <picture class="cs-picture cs-picture2">
+                    <source media="(max-width: 600px)" srcset="/assets/images/jorge-and-bekah-dance-m.webp">
+                    <source media="(min-width: 601px)" srcset="/assets/images/jorge-and-bekah-dance.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/jorge-and-bekah-dance.jpg" alt="house" loading="lazy" width="400" height="563">
+                </picture>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-right">
+                <span class="cs-topper">About Us</span>
+                <h2 class="cs-title">SXSWeb Design</h2>
+                <p class="cs-text">
+                    Our names are Bekah and Jorge, and we are the owners of SXSWeb Design, and Dance-Virtual.
+                    During college, Jorge learned to program websites from scratch, because that was all that was available. He saw many years of technology come and go.
+                    Bekah was a ballroom dancer, and started learning technology while she was pregnant.
+                    Together, we learned wild things while running a small business. We now use what we learned about human-computer interactions to elevate other small businesses through carefully crafted websites.
+                </p>
+                <p class="cs-text">
+                    When we started our own business, we didn't have $3,000 (plus $50/hour for edits) of capital to invest in a website that would attract customers. Many small businesses are in a similar situation. We realized even the businesses that do have money to spend upfront, 
+                    pay a large corporation to get a cookie-cutter website that fails to attract their customers.
+                </p>
+                <p class="cs-text">
+                    We provide a business model to fit your website needs. You start with $0 down, and $150 a month. It's more manageable for small businesses to get started with us. Sometimes getting started is all it takes.
+                </p>
+                <div class="cs-flex-group">
+                    <p class="cs-flex-p">
+                        When we started our own business, we didn't have thousands of capital to invest on a website that would attract customers. We now help small businesses in a similar situation.
+                    </p>
+                    <span class="cs-name">Jorge and Bekah</span>
+                    <span class="cs-job">Owners</span>
+                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
+                </div>
+                <a href="/projects" class="cs-button-solid">Our Projects</a>
+            </div>
+        </div>
+    </section>
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}

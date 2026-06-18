@@ -1018,7 +1018,7 @@
 	#cta {
 		position: relative;
 		padding: calc(50 / 16 * 1rem) 0;
-		background: var(--ink);
+		background: var(--accent);
 		isolation: isolate;
 
 		&:before {
@@ -1394,7 +1394,9 @@
 @media only screen and (min-width: 0em) {
 	body.dark-mode {
 		#footer {
-			background: #061623;
+			// slightly lighter than the page background so the footer
+			// still reads as a distinct section in dark mode
+			background: var(--medium);
 		}
 	}
 }

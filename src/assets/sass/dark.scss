@@ -94,8 +94,8 @@
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
-			width: calc(22 / 16 * 1rem);
-			height: calc(22 / 16 * 1rem);
+			width: calc(22 / 16 * 2rem);
+			height: calc(22 / 16 * 2rem);
 			pointer-events: none;
 		}
 
@@ -113,6 +113,7 @@
 			transform: translate(-50%, 100%) rotate(-15deg);
 			opacity: 0;
 			transition: transform 0.35s, opacity 0.3s;
+			color: white;
 
 			.cs-blade-glint {
 				opacity: 0.5;

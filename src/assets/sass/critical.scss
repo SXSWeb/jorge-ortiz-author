@@ -96,6 +96,8 @@
 			justify-content: center;
 			flex-wrap: wrap;
 			box-sizing: border-box;
+			background-color: rgba(0, 0, 0, 0.75); /* 75% Opacity */
+			border: 1em solid transparent;  /* Add border for opacity window */
 		}
 
 		.cs-topper {

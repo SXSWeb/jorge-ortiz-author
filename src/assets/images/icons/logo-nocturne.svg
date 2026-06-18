@@ -59,7 +59,7 @@
   <path d="m367.32,291.36a169,169 0 0 1 -3.15,10.75a3913,3913 0 0 1 38.08,45.72c15.28,-8.49 29.93,-19.35 42.94,-32.67c-23,-3.93 -50.91,-14.15 -77.87,-23.8z" fill="#004f00" id="path-lower-right-a"/>
   <path d="m348.28,292.43c-26.43,7.1 -58.29,8.92 -80.96,14.06c-13.76,3.12 -23.05,7.92 -25.42,11.51c-1.19,1.79 -1.65,3.26 -0.87,6.85c0.78,3.58 3.33,9.05 8.59,16.04l0,0l0,0.01c15.6,20.78 35.1,23.19 55.21,12.3c17.34,-9.39 34.29,-30.29 43.45,-60.77z" fill="#bf0000" id="path-lower-right-b"/>
   <path d="m357.48,319.06c-8.45,18.07 -19.75,32.47 -32.63,42.46c62.56,52.33 120.89,98.44 169.99,133.31c-35,-50.88 -83.14,-111.51 -137.36,-175.77z" fill="#191919" id="path-sweep"/>
-  <text fill="#191919" font-family="Cursive" font-size="150" font-style="italic" font-weight="normal" id="svg_2" stroke="#FFFFFF" stroke-width="8" paint-order="stroke" text-anchor="middle" transform="matrix(1 0 0 1 282.857 25.7143)" x="652.86" xml:space="preserve" y="175.14">Assassin&#x27;s</text>
-  <text fill="#191919" font-family="Cursive" font-size="150" font-style="italic" font-weight="normal" id="svg_3" stroke="#FFFFFF" stroke-width="8" paint-order="stroke" text-anchor="middle" transform="matrix(1 0 0 1 722.857 95.7143)" x="212.15" xml:space="preserve" y="325.14">Nocturne</text>
+  <text fill="#191919" font-family="Cursive" font-size="150" font-style="italic" font-weight="normal" id="svg_2" text-anchor="middle" transform="matrix(1 0 0 1 282.857 25.7143)" x="652.86" xml:space="preserve" y="175.14">Assassin&#x27;s</text>
+  <text fill="#191919" font-family="Cursive" font-size="150" font-style="italic" font-weight="normal" id="svg_3" text-anchor="middle" transform="matrix(1 0 0 1 722.857 95.7143)" x="212.15" xml:space="preserve" y="325.14">Nocturne</text>
  </g>
 </svg>

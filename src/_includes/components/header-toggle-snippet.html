@@ -1,0 +1,37 @@
+<!--
+  DAGGER TOGGLE — drop-in replacement for the toggle button markup inside
+  your real components/header.html (not uploaded, so this wasn't edited
+  directly — paste this in place of whatever currently lives inside your
+  existing #dark-mode-toggle button).
+
+  The id, button wrapper, and class names (cs-moon / cs-sun) are kept
+  IDENTICAL to the original CodeStitch sun/moon toggle on purpose, so you
+  don't need to touch nav.js or dark.js — only the artwork inside the two
+  <svg> tags changed. dark.scss already has matching CSS for these classes.
+
+  cs-moon = sheathed dagger (shown in light mode)
+  cs-sun  = unsheathed dagger, blade drawn, with a glint line that animates
+            (shown in dark mode)
+-->
+
+<button id="dark-mode-toggle" aria-label="toggle dark mode">
+  <svg class="cs-moon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+    <!-- Sheathed dagger: hilt + sheath only, blade hidden away -->
+    <g>
+      <rect x="29" y="6" width="6" height="10" rx="2" fill="currentColor"/>
+      <rect x="24" y="14" width="16" height="6" rx="2" fill="currentColor"/>
+      <path d="M27 20 L37 20 L34 52 L32 58 L30 52 Z" fill="currentColor" opacity="0.9"/>
+      <line x1="32" y1="22" x2="32" y2="50" stroke="var(--parchment)" stroke-width="1" opacity="0.4"/>
+    </g>
+  </svg>
+  <svg class="cs-sun" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+    <!-- Unsheathed dagger: blade exposed, hilt at bottom, animated glint -->
+    <g>
+      <path d="M32 4 L36 22 L32 26 L28 22 Z" fill="currentColor"/>
+      <rect x="30" y="22" width="4" height="20" fill="currentColor"/>
+      <rect x="24" y="40" width="16" height="5" rx="1.5" fill="currentColor"/>
+      <rect x="29" y="45" width="6" height="11" rx="2" fill="currentColor"/>
+      <line x1="33" y1="6" x2="33" y2="40" class="cs-blade-glint" stroke="var(--parchment)" stroke-width="1.2" opacity="0.5"/>
+    </g>
+  </svg>
+</button>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assassin's Nocturne — Preview</title>
+<style>
+  /* compiled scss inlined below */
+</style>
+<link rel="stylesheet" href="combined.css">
+<style>
+  /* Preview-only helpers, not part of the real site CSS */
+  #int-hero, #hero { /* reuse hero bg image via gradient placeholder since no real cover art uploaded yet */ }
+  .placeholder-cover {
+    width: 100%; height: 100%; display:flex; align-items:center; justify-content:center;
+    font-family: "Cinzel", Georgia, serif; color: rgba(244,236,217,0.85); text-align:center; font-size: 0.9rem; letter-spacing:0.05em;
+  }
+  .cover-book1 { background: linear-gradient(160deg, #2a1b38 0%, #4a2d5e 45%, #1d2b1f 100%); }
+  .cover-book2 { background: linear-gradient(160deg, #2b2320 0%, #a13c2c 55%, #1a1310 100%); }
+  .cover-book3 { background: linear-gradient(160deg, #1f6e6e 0%, #7a2348 55%, #d4a72c 100%); }
+  #hero .cs-picture, #int-hero picture { background: linear-gradient(160deg, #2a1b38 0%, #4a2d5e 45%, #1d2b1f 100%); }
+  #hero .cs-picture img, #int-hero picture img { display:none; }
+  #sbs .cs-picture1 img, #sbs .cs-picture2 img { display:none; }
+  #sbs .cs-picture1, #sbs .cs-picture2 { display:flex; }
+  #gallery .cs-picture img { display:none; }
+  .cs-quote-icon { display:none; }
+  #cta picture img { display:none; }
+  #cta picture { background: linear-gradient(160deg, #2a1b38 0%, #1d2b1f 100%); }
+  .nav-fake { position:fixed; top:0; left:0; width:100%; background:var(--parchment); z-index:10000; padding:1rem 1.5rem; display:flex; align-items:center; justify-content:space-between; box-shadow: rgba(28,20,16,0.15) 0px 8px 24px; font-family:"Cinzel", Georgia, serif; }
+  .nav-fake .brand { font-weight:900; color:var(--ink); letter-spacing:0.05em; }
+  .nav-fake .links { display:flex; gap:2rem; font-family:"Crimson Pro", Georgia, serif; }
+  .nav-fake .links a { color:var(--bodyTextColor); text-decoration:none; }
+  body { padding-top: 70px; }
+</style>
+</head>
+<body>
+
+<!-- Fake simplified nav just for preview purposes -->
+<div class="nav-fake">
+  <div class="brand">ASSASSIN'S NOCTURNE</div>
+  <div class="links">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Books</a>
+  </div>
+  <button id="dark-mode-toggle" aria-label="toggle dark mode" style="position:relative;">
+    <svg class="cs-moon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+      <!-- Sheathed dagger: hilt + sheath only, blade hidden -->
+      <g>
+        <rect x="29" y="6" width="6" height="10" rx="2" fill="currentColor"/>
+        <rect x="24" y="14" width="16" height="6" rx="2" fill="currentColor"/>
+        <path d="M27 20 L37 20 L34 52 L32 58 L30 52 Z" fill="currentColor" opacity="0.9"/>
+        <line x1="32" y1="22" x2="32" y2="50" stroke="var(--parchment)" stroke-width="1" opacity="0.4"/>
+      </g>
+    </svg>
+    <svg class="cs-sun" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+      <!-- Unsheathed dagger: blade exposed, hilt at bottom, glint highlight -->
+      <g>
+        <path d="M32 4 L36 22 L32 26 L28 22 Z" fill="currentColor"/>
+        <rect x="30" y="22" width="4" height="20" fill="currentColor"/>
+        <rect x="24" y="40" width="16" height="5" rx="1.5" fill="currentColor"/>
+        <rect x="29" y="45" width="6" height="11" rx="2" fill="currentColor"/>
+        <line x1="33" y1="6" x2="33" y2="40" class="cs-blade-glint" stroke="var(--parchment)" stroke-width="1.2" opacity="0.5"/>
+      </g>
+    </svg>
+  </button>
+</div>
+
+<script>
+  document.getElementById('dark-mode-toggle').addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+  });
+</script>
+
+<main id="main">
+
+  <!-- ============================================ -->
+  <!--                    Hero                      -->
+  <!-- ============================================ -->
+  <section id="hero">
+      <div class="cs-container">
+          <div class="cs-flex-group">
+              <span class="cs-topper">A Fantasy Thriller Trilogy</span>
+              <h1 class="cs-title">Assassin's Nocturne</h1>
+              <p class="cs-text">
+                  An elf assassin walks the knife-edge between light and dark — for her people, for her vengeance, for herself. Begin with Book One, available now.
+              </p>
+              <a href="#" class="cs-button-solid">Read Blade of Shadows</a>
+              <a href="#" class="cs-button-transparent">
+                  <img class="cs-img" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg" alt="" width="17" height="17" />
+                  Meet Mariel
+              </a>
+          </div>
+      </div>
+      <picture class="cs-picture"><img alt=""></picture>
+  </section>
+
+  <!-- ============================================ -->
+  <!--          "Why Read" (was Services)           -->
+  <!-- ============================================ -->
+  <section id="services" class="services">
+      <div class="card">
+          <picture><div class="placeholder-cover" style="width:64px;height:64px;border-radius:50%;font-size:0.6rem;">Icon</div></picture>
+          <h2>A Morally Gray Heroine</h2>
+          <p>Mariel isn't a hero by choice — she's an elf assassin caught between duty, vengeance, and the cost of every blade she draws.</p>
+      </div>
+      <div class="card">
+          <picture><div class="placeholder-cover" style="width:64px;height:64px;border-radius:50%;font-size:0.6rem;">Icon</div></picture>
+          <h2>Elven Politics &amp; Intrigue</h2>
+          <p>Courts, oaths, and old grudges shape a world where every alliance has a price and every secret has teeth.</p>
+      </div>
+      <div class="card">
+          <picture><div class="placeholder-cover" style="width:64px;height:64px;border-radius:50%;font-size:0.6rem;">Icon</div></picture>
+          <h2>A Slow-Burn Mythology</h2>
+          <p>From shadowed forests to ashen battlefields to the coiled throne of serpents — the trilogy builds toward a reckoning three books in the making.</p>
+      </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!--                 About Author                 -->
+  <!-- ============================================ -->
+  <section id="sbs">
+      <div class="cs-container">
+          <div class="cs-left">
+              <picture class="cs-picture cs-picture1"><div class="placeholder-cover">Author Photo</div></picture>
+              <picture class="cs-picture cs-picture2"><div class="placeholder-cover">Behind the Scenes</div></picture>
+          </div>
+          <div class="cs-right">
+              <span class="cs-topper">About the Author</span>
+              <h2 class="cs-title">Building Mariel's World</h2>
+              <p class="cs-text">
+                  Assassin's Nocturne began as a question: what does it cost an elf raised for war to choose her own path? Three books later, that question is still being answered — in blood, in ash, and in the coils of an old throne.
+              </p>
+              <p class="cs-text">
+                  Blade of Shadows is out now. Ash and Blood and Crown of Serpents continue Mariel's story.
+              </p>
+              <div class="cs-flex-group">
+                  <p class="cs-flex-p">
+                      "I wanted a heroine who wasn't easy to root for — and impossible to look away from."
+                  </p>
+                  <span class="cs-name">The Author</span>
+                  <span class="cs-job">Writer of Assassin's Nocturne</span>
+              </div>
+              <a href="#" class="cs-button-solid">See All Books</a>
+          </div>
+      </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!--           Book Covers (was Gallery)          -->
+  <!-- ============================================ -->
+  <section id="gallery">
+      <div class="cs-container">
+          <span class="cs-topper">The Trilogy</span>
+          <h2 class="cs-title">Three Books, One Reckoning</h2>
+          <div class="cs-image-group">
+              <div class="cs-row cs-row-1">
+                  <picture class="cs-picture cs-picture1 cs-no-cover">
+                    <div class="placeholder-cover cover-book1">BLADE OF<br>SHADOWS<br><small>Book One — Out Now</small></div>
+                  </picture>
+              </div>
+              <div class="cs-row cs-row-2">
+                  <picture class="cs-picture cs-picture1 cs-no-cover">
+                    <div class="placeholder-cover cover-book2">ASH AND<br>BLOOD<br><small>Book Two</small></div>
+                  </picture>
+              </div>
+              <div class="cs-row cs-row-3">
+                  <picture class="cs-picture cs-picture1 cs-no-cover">
+                    <div class="placeholder-cover cover-book3">CROWN OF<br>SERPENTS<br><small>Book Three — Draft Cover</small></div>
+                  </picture>
+              </div>
+          </div>
+          <a href="#" class="cs-button-solid">View All Books</a>
+      </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!--        Reader Praise (was Reviews)           -->
+  <!-- ============================================ -->
+  <section id="reviews">
+      <div class="cs-container">
+          <span class="cs-topper">Reader Praise</span>
+          <h2 class="cs-title">What Readers Are Saying</h2>
+          <p class="cs-text">Early readers of Blade of Shadows on Mariel, her world, and the blade she carries.</p>
+          <ul class="cs-card-group">
+              <li class="cs-item">
+                  <img class="cs-item-img" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png" alt="" width="80" height="80" />
+                  <p class="cs-item-p">
+                      A morally complicated heroine and a world that feels lived-in from page one. I couldn't put it down.
+                  </p>
+                  <span class="cs-reviewer">
+                      Early Reader
+                      <span class="cs-desc">Goodreads Review</span>
+                  </span>
+                  <img class="cs-item-stars" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg" alt="" width="96" height="16" />
+              </li>
+              <li class="cs-item">
+                  <img class="cs-item-img" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png" alt="" width="80" height="80" />
+                  <p class="cs-item-p">
+                      The political intrigue is sharp, the action is brutal, and Mariel's internal conflict never feels forced.
+                  </p>
+                  <span class="cs-reviewer">
+                      Early Reader
+                      <span class="cs-desc">Beta Reader</span>
+                  </span>
+                  <img class="cs-item-stars" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg" alt="" width="96" height="16" />
+              </li>
+          </ul>
+          <a href="#" class="cs-button-solid">Read More Reviews</a>
+      </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!--                Final CTA                     -->
+  <!-- ============================================ -->
+  <section id="cta">
+      <div class="container">
+          <h2 class="title">Start the Trilogy Tonight</h2>
+          <p>Blade of Shadows is available now. Join the mailing list for release updates on Ash and Blood and Crown of Serpents.</p>
+          <a href="#" class="cs-button-solid">Get Blade of Shadows</a>
+      </div>
+      <picture><img alt=""></picture>
+  </section>
+
+</main>
+
+</body>
+</html>

@@ -249,7 +249,7 @@
 		margin-top: calc(-167 / 16 * 1em);
 		position: relative;
 		z-index: 100;
-		background: #fff;
+		background: var(--parchment);
 		width: 90%;
 		max-width: calc(1320 / 16 * 1em);
 		padding: calc(50 / 16 * 1em) calc(20 / 16 * 1em);
@@ -283,11 +283,12 @@
 				}
 			}
 			h2 {
+				font-family: "Cinzel", Georgia, serif;
 				text-align: center;
 				font-size: calc(32 / 16 * 1em);
 				line-height: 27/20em;
 				font-weight: 700;
-				color: #1a1a1a;
+				color: var(--ink);
 				margin-bottom: 13/20em;
 			}
 			p {
@@ -334,11 +335,11 @@
 			background: var(--medium);
 
 			picture {
-				background: var(--primaryDark);
+				background: var(--book1Light);
 			}
 
 			h2 {
-				color: #fff;
+				color: var(--bodyTextColorWhite);
 				font-weight: bold;
 			}
 		}

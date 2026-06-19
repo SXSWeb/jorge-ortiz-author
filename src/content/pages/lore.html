@@ -1,0 +1,54 @@
+---
+title: 'Lore'
+description: "Explore the maps and lore of the world behind Assassin's Nocturne, from Mariel Aldalinde's homeland to the shadows she walks."
+preloadImg: '/assets/images/books-leaves.jpg'
+permalink: 'maps/'
+eleventyNavigation:
+    key: Lore
+    order: 300
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/css/projects.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Maps and Lore</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/books-leaves.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/books-leaves.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/books-leaves.jpg" alt="Jorge Ortiz's Books" loading="eager" width="2500" height="1000">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Gallery                    -->
+    <!-- ============================================ -->
+
+    <section id="gallery">
+        <div class="cs-container">
+            <div class="cs-image-group">
+                <!-- Row 1-->
+                <div class="cs-row cs-row-1">
+                    <picture class="">
+                        <source media="(max-width: 600px)" srcset="/assets/images/map/AeonZen-Map.webp">
+                        <source media="(min-width: 601px)" srcset="/assets/images/map/AeonZen-Map.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/map/AeonZen-Map.jpg" alt="Aeon Zen" loading="lazy" width="90%">
+                    </picture>
+                    <p class="cs-image-title">Map of Aeon Zen</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}

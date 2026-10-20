@@ -1,0 +1,46 @@
+---
+title: 'Newsletter'
+description: "Join the Assassin’s Nocturne newsletter for release dates, cover reveals, and bonus content from the fantasy trilogy."
+preloadImg: '/assets/images/newsletter.jpg'
+permalink: 'newsletter/'
+eleventyNavigation:
+    key: Newsletter
+    order: 450
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <!-- <link rel="stylesheet" href="/css/newsletter.css"> -->
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Stay in the Shadows</h1>
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="/assets/images/newsletter-m.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/newsletter.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/newsletter.jpg" alt="new home" width="2500" height="1500" loading="eager">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Newsletter                  -->
+    <!-- ============================================ -->
+
+    <section id="newsletter">
+        <div class="container" style="text-align: center !important; margin: auto !important;">
+
+            <script async data-uid="e83daa03a5" src="https://jorge-ortiz.kit.com/e83daa03a5/index.js"></script>
+
+        </div>
+    </section>
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}

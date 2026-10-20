@@ -1,0 +1,98 @@
+/*-- ============================================ --*/
+/*--               Newsletter Page               --*/
+/*-- ============================================ --*/
+
+@media only screen and (min-width: 0em) {
+    #newsletter {
+        padding: clamp(3rem, 6vw, 5rem) 1rem;
+        text-align: center;
+
+        .cs-container {
+            max-width: calc(700 / 16 * 1rem); /* narrower than default — keeps prose readable */
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: calc(16 / 16 * 1rem);
+        }
+
+        .cs-topper {
+            /* inherits site-wide .cs-topper — just needs centering */
+            text-align: center;
+        }
+
+        .cs-title {
+            text-align: center;
+            max-width: 100%;
+        }
+
+        .cs-text {
+            text-align: center;
+            max-width: 100%;
+        }
+
+        /* The bullet list — left-align the items themselves but center
+           the whole block within the container */
+        .cs-ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: calc(10 / 16 * 1rem);
+            width: 100%;
+            max-width: calc(560 / 16 * 1rem);
+        }
+
+        .cs-li {
+            position: relative;
+            padding-left: calc(24 / 16 * 1rem);
+            text-align: left;
+            font-size: var(--bodyFontSize);
+            line-height: 1.5em;
+            color: var(--bodyTextColor);
+
+            /* dagger bullet — uses the site's primary (book-1 purple) */
+            &::before {
+                content: "✦";
+                position: absolute;
+                left: 0;
+                top: 0.05em;
+                color: var(--primary);
+                font-size: 0.75em;
+            }
+        }
+
+        /* Fine-print line (unsubscribe note) — slightly muted */
+        .cs-fine-print {
+            font-size: calc(14 / 16 * 1rem);
+            opacity: 0.75;
+        }
+
+        /* Kit.com embed wrapper — centers the injected iframe/form */
+        .cs-kit-wrapper {
+            width: 100%;
+            max-width: calc(560 / 16 * 1rem);
+
+            /* Kit injects a <div> and then an <iframe>; both need to fill
+               the wrapper width so the form doesn't appear left-docked */
+            > div,
+            iframe,
+            form {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+        }
+    }
+}
+
+/* Dark mode */
+@media only screen and (min-width: 0em) {
+    body.dark-mode {
+        #newsletter {
+            .cs-li {
+                color: var(--bodyTextColorWhite);
+            }
+        }
+    }
+}
